@@ -20,16 +20,7 @@ return [
             ]
         ],
         'may_terminate' => true,
-        'child_routes'  => [
-            'team'    => [
-                'type'      => Literal::class,
-                'options'   => [
-                    'route'     => '/team',
-                    'defaults'  => [
-                        'action'    => 'team'
-                    ]
-                ]
-            ],
+        'child_routes'  => [    
             'marketing-plan'    => [
                 'type'      => Literal::class,
                 'options'   => [
@@ -74,6 +65,16 @@ return [
                         'action'        => 'careleaf'
                     ]
                 ]
+            ]
+        ]
+    ],
+    'our-team'    => [
+        'type'      => Literal::class,
+        'options'   => [
+            'route'     => '/our-team',
+            'defaults'  => [
+                'controller'    => Controller\PageController::class,
+                'action'    => 'team'
             ]
         ]
     ]
