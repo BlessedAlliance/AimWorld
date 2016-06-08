@@ -6,8 +6,12 @@
  * @see https://zendframework.github.io/zend-servicemanager/configuring-the-service-manager/
  */
 
+use AimWorld\Factory;
+
 return [
-    'factories'          => [],
+    'factories'          => [
+        "AimWorld\Options\ModuleOptions"     => Factory\ModuleOptionsFactory::class,
+    ],
     'services'           => [],
     'abstract_factories' => [],
     'delegators'         => [],
