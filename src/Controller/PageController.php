@@ -35,7 +35,7 @@ class PageController extends AbstractActionController
     {
         return new ViewModel();
     }
-    
+
     public function productsAction()
     {
         return new ViewModel();
@@ -45,7 +45,7 @@ class PageController extends AbstractActionController
     {
         return new ViewModel();
     }
-    
+
     public function teamAction()
     {
         return new ViewModel();
