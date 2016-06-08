@@ -1,8 +1,15 @@
-Initial AIM World Site Module
+AIM World Site Module
 ===========
-
 
 Features
 --------
 
 TO DO 
+
+
+
+
+-----------------
+
+Installation
+=============
