@@ -21,6 +21,15 @@ return [
         ],
         'may_terminate' => true,
         'child_routes'  => [
+            'team'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/team',
+                    'defaults'  => [                            
+                        'action'    => 'team'
+                    ]
+                ]
+            ],
             'marketing-plan'    => [
                 'type'      => Literal::class,
                 'options'   => [
