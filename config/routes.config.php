@@ -25,7 +25,7 @@ return [
                 'type'      => Literal::class,
                 'options'   => [
                     'route'     => '/team',
-                    'defaults'  => [                            
+                    'defaults'  => [
                         'action'    => 'team'
                     ]
                 ]
