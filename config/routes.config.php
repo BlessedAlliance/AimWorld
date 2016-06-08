@@ -17,57 +17,52 @@ return [
             'defaults'      => [
                 'controller'    => Controller\PageController::class,
                 'action'        => 'about'
+            ]
+        ],
+        'may_terminate' => true,
+        'child_routes'  => [
+            'marketing-plan'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/marketing-plan',
+                    'defaults'  => [                            
+                        'action'    => 'marketing-plan'
+                    ]
+                ]
             ],
-            'may_terminate' => true,
-            'child_routes'  => [
-                'marketing-plan'    => [
-                    'type'      => Literal::class,
-                    'options'   => [
-                        'route'     => '/marketing-plan',
-                        'defaults'  => [
-                            'controller'    => Controller\PageController::class,
-                            'action'        => 'marketing_plan'
-                        ]
+            'products'          => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/products',
+                    'defaults'  => [                            
+                        'action'    => 'products'
                     ]
-                ],
-                'products'          => [
-                    'type'      => Literal::class,
-                    'options'   => [
-                        'route'     => '/products',
-                        'defaults'  => [
-                            'controller'    => Controller\PageController::class,
-                            'action'        => 'products'
-                        ]
+                ]
+            ],
+            'i-protect'         => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/product/i-protect-24-7',
+                    'defaults'  => [
+                        'action'    => 'i-protect'
                     ]
-                ],
-                'i-protect'         => [
-                    'type'      => Literal::class,
-                    'options'   => [
-                        'route'     => '/product/i-protect-24-7',
-                        'defaults'  => [
-                            'controller'    => Controller\PageController::class,
-                            'action'        => 'i_protect'
-                        ]
+                ]
+            ],
+            'i-protect-home'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/product/i-protect-home',
+                    'defaults'  => [
+                        'action'    => 'i-protect-home'
                     ]
-                ],
-                'i-protect-home'    => [
-                    'type'      => Literal::class,
-                    'options'   => [
-                        'route'     => '/product/i-protect-home',
-                        'defaults'  => [
-                            'controller'    => Controller\PageController::class,
-                            'action'        => 'i_protect_home'
-                        ]
-                    ]
-                ],
-                'careleaf'          => [
-                    'type'      => Literal::class,
-                    'options'   => [
-                        'route'     => '/product/careleaf',
-                        'defaults'  => [
-                            'controller'    => Controller\PageController::class,
-                            'action'        => 'careleaf'
-                        ]
+                ]
+            ],
+            'careleaf'          => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/product/careleaf',
+                    'defaults'  => [
+                        'action'        => 'careleaf'
                     ]
                 ]
             ]

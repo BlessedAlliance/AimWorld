@@ -35,6 +35,11 @@ class PageController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function productsAction()
+    {
+        return new ViewModel();
+    }
 
     public function marketingPlanAction()
     {
