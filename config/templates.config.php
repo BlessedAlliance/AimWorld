@@ -5,7 +5,7 @@ return [
     'view_manager' => [
         'template_map' => [],
         'template_path_stack' => [
-            'aim-world' => __DIR__ . '/../view',
+            'aim-world' => __DIR__ . '/../templates',
         ],
     ],
 
@@ -14,7 +14,7 @@ return [
         'layout'                    => "site/layout",
         'map'       => [],
         'paths'     => [
-            'aim-world'  => [__DIR__ . '/../view']
+            'aim-world'  => [__DIR__ . '/../templates']
         ]
     ],
 
