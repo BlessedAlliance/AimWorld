@@ -36,15 +36,22 @@ class Module
 
     public function onBootstrap(MvcEvent $event)
     {
-        $app = $event->getApplication();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($app->getEventManager());
+        $eventManager = $event->getApplication()->getEventManager();
+        $eventManager->attach('dispatch', [$this, 'configSiteVariables'], 100);       
 
-        $seviceManager = $app->getServiceManager();
-        $variables = $seviceManager->get("AimWorld\Options\ModuleOptions");
+        $listener = new ModuleRouteListener();
+        $listener->attach($eventManager);
+    }
+    
+    public function configSiteVariables(MvcEvent $event)
+    {
+        // Fetch configuration
+        $config     = $event->getApplication()->getServiceManager()->get("Config");
+        $options    = (array_key_exists('aim_world_settings', $config)) ? $config['aim_world_settings'] : [];
+        $variables  = new ModuleOptions($options);
 
-        $viewModel = $event->getViewModel();
-        $viewModel->setVariables($variables->toArray());
+        // Set configuration
+        $event->getViewModel()->setVariables($variables->toArray());
     }
 
     /**
