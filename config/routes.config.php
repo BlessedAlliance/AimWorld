@@ -30,6 +30,15 @@ return [
                     ]
                 ]
             ],
+            'global-package'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/global-package',
+                    'defaults'  => [                            
+                        'action'    => 'global-package'
+                    ]
+                ]
+            ],
             'products'          => [
                 'type'      => Literal::class,
                 'options'   => [

@@ -17,10 +17,8 @@
             echo $this->headLink(
                 ['rel' => 'shortcut icon', 'href' => $this->basePath('/assets/application/img/favicon.ico')]
             )->prependStylesheet($this->basePath('/assets/application/css/style.css'))
-                ->prependStylesheet($this->basePath('/assets/bootstrap/css/bootstrap-theme.min.css'))
+                ->prependStylesheet($this->basePath('/assets/aim-world/css/style.css'))
                 ->prependStylesheet($this->basePath('/assets/bootstrap/css/bootstrap.min.css'))
-                ->prependStylesheet($this->basePath('/assets/application/css/style.css'))
-                ->prependStylesheet($this->basePath('/assets/application/css/plugins/morris.css'))
                 ->prependStylesheet($this->basePath('/assets/font-awesome/css/font-awesome.min.css'));
             
             /**
@@ -36,6 +34,7 @@
         <main id="site-content">
             <?php echo $this->content;?>
         </main>
+        <div class="divider"><hr></div>
         <footer id="site-footer" class="container">
             <?php echo $this->partial('widget/banner/footer'); ?>
             <?php echo $this->partial('partial/footer'); ?>    
@@ -46,7 +45,9 @@
              */
             echo $this->inlineScript()
                 //prepend up here
+                ->prependFile($this->basePath('/assets/bootstrap/js/carousel.js'))
                 ->prependFile($this->basePath('/assets/bootstrap/js/bootstrap.min.js'))
+                ->prependFile($this->basePath('/assets/jquery-ui/jquery-ui.min.js'))
                 ->prependFile($this->basePath('/assets/jquery/jquery.min.js'))
                 // >IE9 Support
                 ->prependFile(

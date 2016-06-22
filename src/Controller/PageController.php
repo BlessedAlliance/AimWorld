@@ -45,6 +45,11 @@ class PageController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function globalPackageAction()
+    {
+        return new ViewModel();
+    }
 
     public function teamAction()
     {
