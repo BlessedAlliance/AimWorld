@@ -29,9 +29,44 @@ namespace AimWorld\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class PageController extends AbstractActionController
+class MarketingPlanController extends AbstractActionController
 {
     public function indexAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function retailingAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function directReferralBonusAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function matchedSalesBonusAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function unilevelBonusAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function stairstepBonusAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function doubleIncomeAction()
+    {
+        return new ViewModel();
+    }
+    
+    public function royaltyIncomeAction()
     {
         return new ViewModel();
     }

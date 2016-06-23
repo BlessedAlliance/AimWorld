@@ -11,6 +11,8 @@ use AimWorld\Controller;
 
 return [
     'factories' => [
-        Controller\PageController::class => InvokableFactory::class,
+        Controller\MarketingPlanController::class   => InvokableFactory::class,
+        Controller\ProductController::class        => InvokableFactory::class,
+        Controller\PageController::class            => InvokableFactory::class
     ]
 ];
