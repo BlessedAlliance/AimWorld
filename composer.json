@@ -14,10 +14,10 @@
     ],
     "require": {
         "php": "^5.6 || ^7.0",
-        "roave/security-advisories": "dev-master",        
+        "roave/security-advisories": "dev-master",
         "codingmatters/site-module-ini": "^1.0 || ~0.6"
     },
-    "require-dev": {        
+    "require-dev": {
         "zendframework/zend-test": "^3.0",
         "squizlabs/php_codesniffer": "^2.3",
         "phpbench/phpbench": "^0.11",
