@@ -25,7 +25,7 @@
  */
 
 $settings = [
-    'user_id' => "<your-id-here>",
+    'aim_world_id' => "<your-id-here>",
 ];
 
 return [

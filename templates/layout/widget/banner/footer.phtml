@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-8">
+        <h1 class="logo logo--light"><span class="l"><?php echo $this->layout()->organization; ?></h1>
+        <p class="description">
+            <?php echo $this->layout()->description; ?>
+        </p>
+        <ul class="social-links">
+            <li class="social-link">
+                <i class="fa fa-facebook-official"></i>
+            </li>
+            <li class="social-link">
+                <i class="fa fa-twitter-square"></i>
+            </li>
+
+            <li class="social-link">
+                <i class="fa fa-linkedin-square"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <a 
+            href="<?php echo "http://shop.aimworld.today/&tracking=" . $this->layout()->aim_world_id; ?>" 
+            target="_blank"
+            class="btn btn-danger btn-lg" role="button">
+            Join Our Team
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="divider"><hr></div>
+</div>

@@ -1,0 +1,260 @@
+<?php $this->headTitle('About AIM World'); ?>
+<section style="height: auto; margin-top: -10px; color: black;">
+    <div id="aim-world-info" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#aim-world-info" data-slide-to="0" class="active"></li>
+          <li data-target="#aim-world-info" data-slide-to="1"></li>
+          <li data-target="#aim-world-info" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="<?= $this->basePath("assets/aim-world/img/aimworld-banner.jpg") ?>" >
+                <div class="carousel-caption">
+                    <section>
+                        <h1>AIM WORLD</h1>
+                        <p>
+                            New and pioneering online division of Alliance in Motion (AIM) Global.
+                        </p>
+                        <p>
+                            Alliance in Motion Global (AIM Global) is a stable company that has been around for ten (10) solid years in the industry of marketing. We received a countless number of awards for sales and product distribution from several marketing associations worldwide for hitting targets year after year.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?= $this->basePath("assets/aim-world/img/aimworld-banner.jpg") ?>">
+                <div class="carousel-caption">
+                    <h1>Hassle Free, Door-to-Door Delivery</h1>
+                    <p>
+                        Market its new line of innovative and excellent products into 200 countries. Online purchasing of products is available 24/7
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="<?= $this->basePath("assets/aim-world/img/aimworld-banner.jpg") ?>">
+                <div class="carousel-caption">
+                    <h1>World Class Products</h1>
+                    <p>
+                        Reviewed by AIM Wellness Advisory Board composed of different doctors and scientist from different continents
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>        
+</section>
+<div class="divider"><hr></div>
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <h1>World-class, First in the Market! <small>Innovative and excellent products</small></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/assets/aim-world/img/pendantcase.png" alt="i-protect-24-7 pendant" class="img-responsive">
+                    <div class="caption">
+                        <h4>iPRO-TECT 24/7</h4>
+                        <h4 style="color: #0a3325"><small>Self-Protection Technology</small></h4>
+                        <p>
+                            A breakthrough in the control of communicable diseases, protecting individuals round the clock.
+                        </p>
+                        <div class="pull-right">
+                            <a href="<?php echo $this->url('aim-world/products/i-protect'); ?>" 
+                               class="btn btn-warning" role="button">
+                                <strong>Learn more</strong>
+                            </a> 
+                            <a 
+                                href="<?php echo "http://shop.aimworld.today/&tracking=" . $this->layout()->aim_world_id; ?>" 
+                                target="_blank"
+                                class="btn btn-success" role="button">
+                                <strong>Buy One</strong>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/assets/aim-world/img/careleaf.png" alt="careleaf" class="img-responsive">
+                    <div class="caption">
+                        <h4>CARE LEAF</h4>
+                        <h4 style="color: #0a3325"><small>Thermal Relief Patch</small></h4>
+                        <p>
+                            The first thermal patch in the world to use nano-diamonds; delivered in the molecular level.
+                        </p>
+                        <div class="pull-right">
+                            <a href="<?php echo $this->url('aim-world/products/careleaf'); ?>" 
+                               class="btn btn-warning" role="button">
+                                <strong>Learn more</strong>
+                            </a> 
+                            <a 
+                                href="<?php echo "http://shop.aimworld.today/&tracking=" . $this->layout()->aim_world_id; ?>" 
+                                target="_blank"
+                                class="btn btn-success" role="button">
+                                <strong>Buy One</strong>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+            </div>        
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="/assets/aim-world/img/iprotecthome.png" alt="i-protect-home" class="img-responsive">
+                    <div class="caption">
+                        <h4>iPRO-TECT HOME</h4>
+                        <h4 style="color: #0a3325"><small>Indoor-Protection Technology</small></h4>
+                        <p>
+                            A revolutionary product that safe guards your home from viruses and bacteria.   
+                        </p>
+                        <div class="pull-right">
+                            <a href="<?php echo $this->url('aim-world/products/i-protect-home'); ?>" 
+                               class="btn btn-warning" role="button">
+                                <strong>Learn more</strong>
+                            </a> 
+                            <a 
+                                href="<?php echo "http://shop.aimworld.today/&tracking=" . $this->layout()->aim_world_id; ?>" 
+                                target="_blank"
+                                class="btn btn-success" role="button">
+                                <strong>Buy One</strong>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <blockquote>
+                <h3>
+                    Our product is also bundled as Global Package, do you like to buy a Global Package?
+                </h3>
+                <a 
+                    href="<?php echo "http://shop.aimworld.today/&tracking=" . $this->layout()->aim_world_id; ?>" 
+                    target="_blank"
+                    class="btn btn-success" role="button">
+                    <strong>Yes, I would like to Purchase the Global Package</strong>
+                </a>
+                <a href="<?php echo $this->url('aim-world/global-package'); ?>" 
+                    class="btn btn-warning" role="button">
+                    <strong>Learn more about the Global Package</strong>
+                </a>                
+            </blockquote>
+        </div>
+    </div>
+</section>
+<div class="divider"><hr></div>
+<section id="ways-to-earn">
+    <div class="container">
+        <div class="row">
+            <h1 class="center">Your Ways To Earn</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h3>On-demand, Immediate Income <small>(as Daily Income)</small></h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">
+                            RETAILING 
+                            <small>Simply as Direct Selling</small>
+                        </h4>
+                        <p>
+                            As a distributor, you can enjoy <strong>up to 25% LIFETIME discount</strong> for every product purchase.</p>
+                    </div>
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">
+                            DIRECT REFERRAL BONUS
+                        </h4>
+                        <p>
+                            Being a sponsor, you will get <strong>at least $25 US Dollars</strong> as direct referral bonus.
+                        </p>
+                        <p>
+                            <small style="font-style: italic">
+                                <span style="color:red">*</span> depending on the kind of package your new recruit has purchased online.
+                            </small>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">MATCHED SALES BONUS <small>Using BINARY Pairing Program</small></h4>
+                        <p>
+                            In our <strong>BINARY PROGRAM</strong>, you need <strong><i>at least 1 in your left sales force</i></strong> and <strong><i>at least 1 in your right sales force</i></strong> to make a pair.
+                        </p>
+                        <p>
+                            Pairing can be earned through:
+                            <ol>
+                                <li>
+                                    <strong>Person</strong>
+                                    <small>(Direct or Indirect recruit)</small>
+                                    <strong>to</strong> 
+                                    <strong>Person</strong>
+                                    <small>(Direct or Indirect recruit)</small>
+                                </li>
+                                <li>Product to Product</li>
+                                <li>Person <small>(Direct or Indirect recruit)</small> to Product</li>
+                            </ol>
+                        </p>
+                        <p>
+                            You will get a <strong>Matched Sales Bonus of $33 US Dollars per pair</strong>.
+                        </p>
+                        <p>
+                            <small style="font-style: italic">
+                                <span style="color:red">*</span> see the marketing plan to know about the Left or Right Sales Force - including BINARY POINTS.
+                            </small>
+                        </p>                         
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3>Product Movement Income <small>(as Monthly Income)</small></h3>                
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">UNILEVEL BONUS</h4>
+                        <p>
+                            Enjoy a 5% Unilevel bonus as sponsor and 5% as placement.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">STAIRSTEP BONUS</h4>
+                        <p>
+                            Can be earned through:
+                            <ol>
+                                <li>Group Product Re-order and/or</li>
+                                <li>Global Packages</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">DOUBLING YOUR INCOME <small>or even <strong>TRIPLE</strong><span style="color:red">*</span></small></h4>
+                        <p>
+                            To get your unilevel and stairstep income, you need to purchase products equivalent to 0.3334 POINTS.
+                        </p>
+                        <p>
+                            Tripling your income means, you need to purchase products equivalent to 0.6668 POINTS.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h4 style="color:green; font-weight: bold">ROYALTY INCOME</h4>
+                        <p>
+                            If any one of your downlines or directs who become a GLOBAL AMBASSADOR and you already have the same rank with him or her, you now get a ROYALTY INCOME of 2% from his group.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"><br></div>
+        <div class="row">
+            <blockquote class="pull-right">
+                <h3>
+                    We truly value our Distributors so in return we provide <strong>Daily Payout</strong>, yes it's Daily!
+                </h3>
+                <a href="<?= $this->url('aim-world/marketing-plan')?>" class="btn btn-success btn-lg" role="button">
+                    Learn more about Our Marketing Plan
+                </a>
+                <br>
+            </blockquote>   
+        </div>
+        <div class="divider"><br></div>
+    </div>    
+</section>

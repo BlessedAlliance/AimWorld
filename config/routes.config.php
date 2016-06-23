@@ -30,42 +30,51 @@ return [
                     ]
                 ]
             ],
+            'global-package'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/global-package',
+                    'defaults'  => [                            
+                        'action'    => 'global-package'
+                    ]
+                ]
+            ],
             'products'          => [
                 'type'      => Literal::class,
                 'options'   => [
-                    'route'     => '/products',
-                    'defaults'  => [                            
-                        'action'    => 'products'
+                    'route'     => '/product',                    
+                ],
+                'may_terminate' => false,
+                'child_routes'  => [
+                    'i-protect'         => [
+                        'type'      => Literal::class,
+                        'options'   => [
+                            'route'     => '/i-protect-24-7',
+                            'defaults'  => [
+                                'action'    => 'i-protect'
+                            ]
+                        ]
+                    ],
+                    'i-protect-home'    => [
+                        'type'      => Literal::class,
+                        'options'   => [
+                            'route'     => '/i-protect-home',
+                            'defaults'  => [
+                                'action'    => 'i-protect-home'
+                            ]
+                        ]
+                    ],
+                    'careleaf'          => [
+                        'type'      => Literal::class,
+                        'options'   => [
+                            'route'     => '/careleaf',
+                            'defaults'  => [
+                                'action'        => 'careleaf'
+                            ]
+                        ]
                     ]
                 ]
-            ],
-            'i-protect'         => [
-                'type'      => Literal::class,
-                'options'   => [
-                    'route'     => '/product/i-protect-24-7',
-                    'defaults'  => [
-                        'action'    => 'i-protect'
-                    ]
-                ]
-            ],
-            'i-protect-home'    => [
-                'type'      => Literal::class,
-                'options'   => [
-                    'route'     => '/product/i-protect-home',
-                    'defaults'  => [
-                        'action'    => 'i-protect-home'
-                    ]
-                ]
-            ],
-            'careleaf'          => [
-                'type'      => Literal::class,
-                'options'   => [
-                    'route'     => '/product/careleaf',
-                    'defaults'  => [
-                        'action'        => 'careleaf'
-                    ]
-                ]
-            ]
+            ]            
         ]
     ],
     'our-team'    => [

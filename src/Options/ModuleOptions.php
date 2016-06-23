@@ -32,15 +32,15 @@ class ModuleOptions extends AbstractOptions
 {
     protected $__strictMode__ = false;
 
-    protected $userId = '';
+    protected $aimWorldId = '';
 
-    public function setUserId($user_id)
+    public function setAimWorldId($aim_world_id)
     {
-        $this->userId = $user_id;
+        $this->aimWorldId = $aim_world_id;
     }
 
-    public function getUserId()
+    public function getAimWorldId()
     {
-        return $this->userId;
+        return $this->aimWorldId;
     }
 }
