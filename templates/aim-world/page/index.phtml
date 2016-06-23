@@ -1,4 +1,7 @@
-<?php $this->headTitle('About AIM World'); ?>
+<?php 
+    $this->headTitle('About AIM World');
+    $this->headLink()->prependStylesheet($this->basePath('/assets/aim-world/css/style.css'))
+?>
 <section style="height: auto; margin-top: -10px; color: black;">
     <div id="aim-world-info" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -13,10 +16,10 @@
                     <section>
                         <h1>AIM WORLD</h1>
                         <p>
-                            New and pioneering online division of Alliance in Motion (AIM) Global.
+                            New and pioneering online division of Alliance in Motion Global (known as AIM Global).
                         </p>
                         <p>
-                            Alliance in Motion Global (AIM Global) is a stable company that has been around for ten (10) solid years in the industry of marketing. We received a countless number of awards for sales and product distribution from several marketing associations worldwide for hitting targets year after year.
+                            AIM Global is a stable company that has been around for ten (10) solid years in the industry of marketing. We received a countless number of awards for sales and product distribution from several marketing associations worldwide for hitting targets year after year.
                         </p>
                     </section>
                 </div>
@@ -137,10 +140,10 @@
                     class="btn btn-success" role="button">
                     <strong>Yes, I would like to Purchase the Global Package</strong>
                 </a>
-                <a href="<?php echo $this->url('aim-world/global-package'); ?>" 
+                <a href="<?php echo $this->url('aim-world/products/global-package'); ?>" 
                     class="btn btn-warning" role="button">
                     <strong>Learn more about the Global Package</strong>
-                </a>                
+                </a>
             </blockquote>
         </div>
     </div>

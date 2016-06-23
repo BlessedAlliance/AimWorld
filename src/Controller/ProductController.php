@@ -29,14 +29,24 @@ namespace AimWorld\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class PageController extends AbstractActionController
-{
-    public function indexAction()
+class ProductController extends AbstractActionController
+{    
+    public function globalPackageAction()
+    {
+        return new ViewModel();
+    }    
+
+    public function iProtectAction()
     {
         return new ViewModel();
     }
-    
-    public function advisoryBoardAction()
+
+    public function iProtectHomeAction()
+    {
+        return new ViewModel();
+    }
+
+    public function careleafAction()
     {
         return new ViewModel();
     }
