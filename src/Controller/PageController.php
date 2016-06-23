@@ -35,4 +35,9 @@ class PageController extends AbstractActionController
     {
         return new ViewModel();
     }
+    
+    public function advisoryBoardAction()
+    {
+        return new ViewModel();
+    }
 }

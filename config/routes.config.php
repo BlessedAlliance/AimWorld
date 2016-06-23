@@ -20,7 +20,19 @@ return [
             ]
         ],
         'may_terminate' => true,
-        'child_routes'  => [    
+        'child_routes'  => [
+            /**
+             * AIM Wellness Advisory Board 
+             */
+            'advisory-board'    => [
+                'type'      => Literal::class,
+                'options'   => [
+                    'route'     => '/aim-wellness-advisory-board',
+                    'defaults'  => [                       
+                        'action'        => 'advisory-board'
+                    ]
+                ]
+            ],
             /**
              * About Marketing Plan
              */
