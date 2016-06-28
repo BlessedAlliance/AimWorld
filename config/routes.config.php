@@ -124,16 +124,7 @@ return [
                     ]
                 ],
                 'may_terminate' => false,
-                'child_routes'  => [
-                    'global-package'    => [
-                        'type'      => Literal::class,
-                        'options'   => [
-                            'route'     => '/global-package',
-                            'defaults'  => [                                
-                                'action'    => 'global-package'
-                            ]
-                        ]
-                    ],
+                'child_routes'  => [                    
                     'i-protect'         => [
                         'type'      => Literal::class,
                         'options'   => [
@@ -158,6 +149,46 @@ return [
                             'route'     => '/careleaf',
                             'defaults'  => [
                                 'action'        => 'careleaf'
+                            ]
+                        ]
+                    ],
+                    'global-package'    => [
+                        'type'      => Literal::class,
+                        'options'   => [
+                            'route'     => '/global-package',
+                            'defaults'  => [
+                                'controller'    => Controller\GlobalPackageController::class,
+                                'action'        => 'index'
+                            ]
+                        ],
+                        'may_terminate' => true,
+                        'child_routes'  => [
+                            'sapphire'  => [
+                                'type'      => Literal::class,
+                                'options'   => [
+                                    'route'     => '/sapphire-package',
+                                    'defaults'  => [
+                                        'action'        => 'sapphire'
+                                    ]
+                                ]
+                            ],
+                            'emerald'   => [
+                                'type'      => Literal::class,
+                                'options'   => [
+                                    'route'     => '/emerald-package',
+                                    'defaults'  => [
+                                        'action'        => 'emerald'
+                                    ]
+                                ]
+                            ],
+                            'diamond'   => [
+                                'type'      => Literal::class,
+                                'options'   => [
+                                    'route'     => '/diamond-package',
+                                    'defaults'  => [
+                                        'action'        => 'diamond'
+                                    ]
+                                ]
                             ]
                         ]
                     ]
